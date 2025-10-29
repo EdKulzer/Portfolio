@@ -352,6 +352,7 @@
             background: white;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s;
+            position: relative;
         }
 
         .contact-item:hover {
@@ -379,10 +380,22 @@
             font-size: 1.1em;
             font-weight: 500;
             transition: color 0.3s;
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
         }
 
         .contact-item a:hover {
             color: #667eea;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 40px 30px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+            position: relative;
         }
 
         /* Footer */
@@ -791,17 +804,17 @@
             <div class="contact-item" onclick="openForm()" style="cursor: pointer;">
                 <div class="contact-icon">📧</div>
                 <div class="contact-label">Email</div>
-                <a onclick="event.stopPropagation(); openForm(); return false;" style="cursor: pointer;">Send Message</a>
+                <div style="color: #2c2c2c; font-size: 1.1em; font-weight: 500;">Send Message</div>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" onclick="window.open('https://pro.imdb.com/name/nm2552461', '_blank')" style="cursor: pointer;">
                 <div class="contact-icon">🎬</div>
                 <div class="contact-label">IMDb</div>
-                <a href="https://pro.imdb.com/name/nm2552461" target="_blank">View Profile</a>
+                <div style="color: #2c2c2c; font-size: 1.1em; font-weight: 500;">View Profile</div>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/edkulzer/', '_blank')" style="cursor: pointer;">
                 <div class="contact-icon">💼</div>
                 <div class="contact-label">LinkedIn</div>
-                <a href="https://www.linkedin.com/in/edkulzer/" target="_blank">Connect</a>
+                <div style="color: #2c2c2c; font-size: 1.1em; font-weight: 500;">Connect</div>
             </div>
         </div>
     </section>
