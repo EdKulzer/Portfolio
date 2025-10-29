@@ -788,10 +788,10 @@
             I'm available for editing projects, creative collaborations, and consulting opportunities.
         </p>
         <div class="contact-grid">
-            <div class="contact-item">
+            <div class="contact-item" onclick="openForm()" style="cursor: pointer;">
                 <div class="contact-icon">📧</div>
                 <div class="contact-label">Email</div>
-                <a href="mailto:EdKulzerPost@protonmail.com">EdKulzerPost@protonmail.com</a>
+                <a onclick="event.stopPropagation(); openForm(); return false;" style="cursor: pointer;">Send Message</a>
             </div>
             <div class="contact-item">
                 <div class="contact-icon">🎬</div>
